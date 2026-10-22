@@ -130,4 +130,28 @@
       btn.replaceWith(f);
     });
   });
+
+  // Wide (landscape) creator videos: play in a centered pop-up player
+  try {
+    var vm = document.getElementById("videoModal");
+    if (vm) {
+      var frameBox = vm.querySelector(".video-modal-frame"), opener = null;
+      var closeVm = function () { frameBox.innerHTML = ""; vm.hidden = true; document.body.classList.remove("modal-open"); if (opener) opener.focus(); };
+      document.querySelectorAll("[data-yt-wide]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          opener = btn;
+          var f = document.createElement("iframe");
+          f.src = "https://www.youtube-nocookie.com/embed/" + btn.getAttribute("data-yt-wide") + "?autoplay=1&rel=0&playsinline=1";
+          f.title = btn.getAttribute("aria-label").replace(/^Play /, "");
+          f.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture";
+          f.allowFullscreen = true;
+          frameBox.appendChild(f); vm.hidden = false; document.body.classList.add("modal-open");
+          vm.querySelector(".video-modal-close").focus();
+        });
+      });
+      vm.querySelector(".video-modal-close").addEventListener("click", closeVm);
+      vm.addEventListener("click", function (e) { if (e.target === vm) closeVm(); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !vm.hidden) closeVm(); });
+    }
+  } catch (e) {}
 })();

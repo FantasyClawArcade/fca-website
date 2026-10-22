@@ -138,11 +138,11 @@
           <p class="social-meta"><b>@serenaneel</b> · TikTok <span class="social-tag">Collab</span></p>
         </li>
         <li class="social-card">
-          <a class="social-cover" href="https://www.youtube.com/watch?v=innry_A2mJ4" target="_blank" rel="noopener" aria-label="Watch Plush Time Wins on YouTube, The LARGEST Claw Machine Arcade in Las Vegas! (opens in a new tab)">
+          <button type="button" class="social-cover" data-yt-wide="innry_A2mJ4" aria-label="Play Plush Time Wins’ YouTube video, The LARGEST Claw Machine Arcade in Las Vegas!">
             <img src="https://i.ytimg.com/vi/innry_A2mJ4/maxresdefault.jpg" alt="" loading="lazy" style="object-position:20% center" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/innry_A2mJ4/hqdefault.jpg'">
             <span class="play" aria-hidden="true"></span>
-            <span class="social-views" aria-hidden="true">▶ 1M views · YouTube ↗</span>
-          </a>
+            <span class="social-views" aria-hidden="true">▶ 1M views</span>
+          </button>
           <p class="social-meta"><b>@PlushTimeWins</b> · YouTube</p>
         </li>
         <li class="social-card">
@@ -291,6 +291,12 @@
   </section>
 
 </main>
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+  <div class="video-modal-box">
+    <button type="button" class="drawer-close video-modal-close" aria-label="Close the video">×</button>
+    <div class="video-modal-frame"></div>
+  </div>
+</div>
 <button type="button" class="side-tab" data-open-form aria-haspopup="dialog" aria-controls="fr-drawer">Get started</button>
 <div class="drawer-overlay" data-close-form hidden></div>
 <aside class="fr-drawer" id="fr-drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
