@@ -667,3 +667,20 @@ footer .footer-legal a { color: var(--muted); }
 .fr-hero-media .video-card img { filter: brightness(.82); } .fr-hero-media .video-card:hover img { filter: brightness(.95); }
 .fr-hero-media .video-card .play { top: 64%; }
 .machine-photo { aspect-ratio: 3 / 4; border-radius: 14px !important; border: 2.5px solid var(--edge); box-shadow: 5px 5px 0 var(--edge); } .machine-photo img { object-fit: cover; }
+
+/* ===== Social proof: creator/guest clips (Franchising) ===== */
+.social-band { background: #FCE4F1; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.social-wrap { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+.social-wrap .section-head { margin: 0; }
+.social-list { list-style: none; margin: 0; padding: 0; display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+.social-card { width: min(300px, 100%); display: grid; gap: 12px; }
+.social-cover, .social-frame { position: relative; display: block; width: 100%; aspect-ratio: 9 / 16; border: 2.5px solid var(--edge); border-radius: 22px; box-shadow: 8px 8px 0 var(--pink); overflow: hidden; background: #111; padding: 0; cursor: pointer; }
+.social-frame { height: auto; }
+.social-cover img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(.88); }
+.social-cover .play { position: absolute; left: 50%; top: 58%; width: 68px; height: 68px; margin: -34px 0 0 -34px; border-radius: 50%; background: var(--pink); box-shadow: 0 8px 24px rgba(222,11,131,.5); }
+.social-cover .play::after { content: ""; position: absolute; left: 27px; top: 21px; border-style: solid; border-width: 13px 0 13px 20px; border-color: transparent transparent transparent #fff; }
+.social-views { position: absolute; left: 12px; bottom: 12px; background: rgba(0,0,0,.65); color: #fff; font: 700 .9rem/1 var(--body); padding: 8px 10px; border-radius: 8px; }
+.social-meta { font-size: .95rem; color: var(--ink); display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; }
+.social-tag { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--pink-ink); border: 1.5px solid currentColor; border-radius: 999px; padding: 3px 8px; }
+@media (max-width: 880px) { .social-wrap { grid-template-columns: 1fr; gap: 28px; } .social-card { width: min(280px, 100%); } }
+.social-cover .play { top: 30%; left: 64%; }

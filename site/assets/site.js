@@ -104,4 +104,17 @@
       var p = v.play(); if (p && p.catch) p.catch(function () {});
     });
   });
+
+  // Social clips: load the official TikTok embed only when tapped
+  document.querySelectorAll("[data-tiktok]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var f = document.createElement("iframe");
+      f.className = "social-frame";
+      f.src = "https://www.tiktok.com/embed/v2/" + btn.getAttribute("data-tiktok");
+      f.title = btn.getAttribute("aria-label").replace(/^Play /, "");
+      f.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture";
+      f.allowFullscreen = true;
+      btn.replaceWith(f);
+    });
+  });
 })();
