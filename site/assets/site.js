@@ -110,7 +110,8 @@
     btn.addEventListener("click", function () {
       var f = document.createElement("iframe");
       f.className = "social-frame";
-      f.src = "https://www.tiktok.com/embed/v2/" + btn.getAttribute("data-tiktok");
+      f.src = "https://www.tiktok.com/player/v1/" + btn.getAttribute("data-tiktok") + "?autoplay=1&music_info=0&description=0&rel=0&native_context_menu=0&closed_caption=0";
+      f.scrolling = "no";
       f.title = btn.getAttribute("aria-label").replace(/^Play /, "");
       f.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture";
       f.allowFullscreen = true;

@@ -702,3 +702,4 @@ a.social-cover { text-decoration: none; }
 .video-modal-frame iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 2.5px solid var(--edge); border-radius: 16px; box-shadow: 8px 8px 0 var(--pink); background: #000; }
 .video-modal-close { position: absolute; top: -52px; right: 0; }
 .modal-open { overflow: hidden; }
+.social-frame { overflow: hidden; }
