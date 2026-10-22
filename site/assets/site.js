@@ -90,4 +90,18 @@
       document.addEventListener("keydown", function (e) { if (e.key === "Escape" && document.body.classList.contains("drawer-open")) closeForm(); });
     }
   } catch (e) {}
+
+  // Self-hosted franchise video: swap the cover for the player when tapped
+  document.querySelectorAll("[data-video]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var v = document.createElement("video");
+      v.className = "video-frame";
+      v.src = btn.getAttribute("data-video");
+      v.poster = btn.getAttribute("data-poster") || "";
+      v.controls = true; v.playsInline = true; v.autoplay = true;
+      v.setAttribute("aria-label", btn.getAttribute("aria-label").replace(/^Play: /, ""));
+      btn.replaceWith(v);
+      var p = v.play(); if (p && p.catch) p.catch(function () {});
+    });
+  });
 })();

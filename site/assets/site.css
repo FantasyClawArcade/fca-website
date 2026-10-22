@@ -664,3 +664,5 @@ footer .footer-legal a { color: var(--muted); }
 @media (prefers-reduced-motion: reduce) { .fr-drawer, .drawer-overlay { transition: none; } }
 .fr-drawer { visibility: hidden; transition: transform .25s ease, visibility 0s linear .25s; }
 .drawer-open .fr-drawer { visibility: visible; transition: transform .25s ease; }
+.fr-hero-media .video-card img { filter: brightness(.82); } .fr-hero-media .video-card:hover img { filter: brightness(.95); }
+.fr-hero-media .video-card .play { top: 64%; }
