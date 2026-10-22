@@ -666,3 +666,4 @@ footer .footer-legal a { color: var(--muted); }
 .drawer-open .fr-drawer { visibility: visible; transition: transform .25s ease; }
 .fr-hero-media .video-card img { filter: brightness(.82); } .fr-hero-media .video-card:hover img { filter: brightness(.95); }
 .fr-hero-media .video-card .play { top: 64%; }
+.machine-photo { aspect-ratio: 3 / 4; border-radius: 14px !important; border: 2.5px solid var(--edge); box-shadow: 5px 5px 0 var(--edge); } .machine-photo img { object-fit: cover; }
