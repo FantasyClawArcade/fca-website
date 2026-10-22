@@ -435,13 +435,14 @@ body.clean.manual-clean .exit-clean { display: block; }
 #anchor1 > .fine { padding-inline: 16px; }
 @media (max-width: 880px) { #anchor1 { max-width: 560px; width: 100%; } }
 
-/* Franchising hero media: silent arcade loop + franchise video + ribbon cutting */
-.fr-media { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.fr-loop { display: block; width: 100%; aspect-ratio: 9 / 16; height: auto; object-fit: cover; border-radius: var(--radius); background: #332C2B; }
-.fr-media .fr-photo { aspect-ratio: 9 / 16; height: auto; min-height: 0; }
-.fr-media .fr-photo img { object-position: 45% center; }
-@media (max-width: 560px) {
-  .fr-media { grid-template-columns: 1fr 1fr; }
-  .fr-media .video-card { max-width: none; }
-  .fr-media .fr-photo { grid-column: 1 / -1; aspect-ratio: 4 / 3; }
-}
+
+/* Franchising: "How we stand out" and "Why now" photo and video cards */
+.why-group { font-size: 1.3rem; margin: 36px 0 16px; }
+.why-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.why-card { display: grid; gap: 10px; align-content: start; min-width: 0; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 12px 18px; }
+.why-media { margin: 0; aspect-ratio: 4 / 5; max-width: 100%; border-radius: calc(var(--radius) - 4px); overflow: hidden; background: var(--surface-2); }
+.why-media img, .why-media video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.why-card h4 { margin: 6px 4px 0; font-family: var(--display); font-weight: 700; font-size: 1.1rem; line-height: 1.2; }
+.why-card p { margin: 0 4px; color: var(--muted); font-size: .95rem; }
+@media (max-width: 880px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .why-grid { grid-template-columns: 1fr; } .why-media { aspect-ratio: 4 / 3; } }
