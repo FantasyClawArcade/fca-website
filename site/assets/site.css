@@ -469,3 +469,45 @@ a.store:hover, .others a:hover, a.card:hover { transform: translate(-2px, -2px);
 }
 .section-head + .why-grid { margin-top: 32px; }
 .parties h2 { font-family: var(--headline); font-weight: 800; letter-spacing: -0.01em; font-size: clamp(2.1rem, 5vw, 3.4rem); }
+
+/* ===== Franchising layout: hero with one big video, form beside the five steps, always-on Request info ===== */
+.fr-hero .wrap { align-items: center; }
+@media (min-width: 881px) { .fr-hero .wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 340px); gap: 64px; } }
+.fr-hero { padding-block: 56px 64px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.hero-fine { margin-top: 14px; }
+.fr-hero-media .video-card { width: 100%; max-width: 340px; margin-inline: auto; border: 2.5px solid var(--edge); box-shadow: 6px 6px 0 var(--edge); border-radius: 16px; }
+.fr-hero-media .video-frame { width: 100%; max-width: 340px; aspect-ratio: 9 / 16; display: block; margin-inline: auto; border: 2.5px solid var(--edge); border-radius: 16px; }
+.fr-hero-media .video-card .play { width: 76px; height: 76px; margin: -38px 0 0 -38px; }
+.fr-hero-media .video-card .play::after { left: 30px; top: 24px; border-width: 14px 0 14px 22px; }
+.fr-hero-media .video-card .vc-cap b { font-size: 1.15rem; }
+
+.journey .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 440px); gap: 56px; align-items: start; }
+.journey .steps { grid-template-columns: 1fr; gap: 0; margin-top: 28px; }
+.journey .steps li { grid-template-columns: 96px 1fr; column-gap: 16px; row-gap: 4px; padding-block: 18px; border-top: 2px solid var(--line); }
+.journey .steps li:first-child { border-top: 3px solid var(--pink); }
+.journey .steps li::before { grid-row: span 2; padding-top: 4px; }
+.journey .steps h3 { font-size: 1.15rem; }
+.journey .steps p { font-size: .98rem; }
+
+.support-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 48px; align-items: center; }
+.support-head .section-head { margin: 0; }
+.support-photo { aspect-ratio: 4 / 3; border-radius: 16px; overflow: hidden; border: 2.5px solid var(--edge); box-shadow: 6px 6px 0 var(--edge); }
+.support-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+@media (max-width: 880px) {
+  .journey .wrap, .support-head { grid-template-columns: 1fr; gap: 32px; }
+  .fr-hero { padding-block: 32px 48px; }
+  .fr-hero-media .video-card, .fr-hero-media .video-frame { max-width: 280px; }
+}
+@media (max-width: 480px) { .journey .steps li { grid-template-columns: 1fr; } .journey .steps li::before { grid-row: auto; } .hero-actions .btn { flex: 1 1 100%; } }
+
+/* Request info always within reach: sticky header on desktop, fixed bottom bar on phones */
+@media (min-width: 881px) {
+  .on-franchising .site-head { position: sticky; top: 0; z-index: 20; box-shadow: 0 2px 12px rgba(51,44,43,.06); }
+  .on-franchising .quick, .on-franchising.form-away .quick { display: none; }
+  #anchor1, #investment { scroll-margin-top: 104px; }
+}
+@media (max-width: 880px) {
+  .on-franchising .quick { display: block; }
+}
