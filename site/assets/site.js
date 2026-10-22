@@ -60,4 +60,10 @@
       var n = fm.querySelector(".embed-note"); if (n) n.textContent = "This form isn't connected yet, so nothing was sent. Please call your arcade for now.";
     });
   });
+  // Silent background loops: respect "reduce motion" settings
+  try {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll("video[autoplay]").forEach(function (v) { v.removeAttribute("autoplay"); v.pause(); });
+    }
+  } catch (e) {}
 })();
