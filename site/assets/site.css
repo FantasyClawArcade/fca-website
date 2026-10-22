@@ -541,3 +541,6 @@ a.store:hover, .others a:hover, a.card:hover { transform: translate(-2px, -2px);
 .prose .bare-url { overflow-wrap: anywhere; color: var(--muted); }
 .post-video { max-width: 320px; }
 .more-link { color: var(--pink-ink); font-weight: 700; text-decoration: none; }
+footer .footer-legal { display: block; padding-block: 18px 22px; border-top: 1px solid var(--line); font-size: .85rem; color: var(--muted); }
+footer .footer-legal p { margin: 0; }
+footer .footer-legal a { color: var(--muted); }
