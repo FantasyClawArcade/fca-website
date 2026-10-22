@@ -586,3 +586,14 @@ footer .footer-legal a { color: var(--muted); }
 .fi-list a:hover { color: var(--pink-ink); opacity: 1; }
 .fi-more { font-size: .85rem; white-space: nowrap; }
 @media (max-width: 760px) { .featured-in .wrap { gap: 10px 18px; } .fi-list { gap: 8px 18px; } .fi-list a { font-size: 1rem; } }
+.fi-list { gap: 14px 40px; }
+.fi-list a { display: inline-flex; align-items: center; }
+.fi-list img { display: block; width: auto; filter: grayscale(1) brightness(.35); opacity: .8; transition: opacity .15s, transform .15s; }
+.fi-list a:hover img { opacity: 1; transform: translateY(-1px); }
+.fi-wsj { height: 20px; }
+.fi-costar { height: 30px; }
+.fi-ft { height: 24px; }
+.fi-klas { height: 44px; }
+.fi-list a.fi-text { font-family: Georgia, "Times New Roman", serif; }
+@media (max-width: 760px) { .fi-list { gap: 14px 26px; } .fi-wsj { height: 15px; } .fi-costar { height: 24px; } .fi-ft { height: 19px; } .fi-klas { height: 36px; } }
+.fi-list a.fi-text { color: #5a5352; font-size: clamp(1rem, 1.6vw, 1.2rem); }
