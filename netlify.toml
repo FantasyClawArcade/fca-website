@@ -1,0 +1,11 @@
+# Netlify settings for the Fantasy Claw Arcade website.
+# The site is plain HTML: no build step. Netlify publishes the "site" folder.
+[build]
+  publish = "site"
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
