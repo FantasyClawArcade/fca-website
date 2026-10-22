@@ -522,3 +522,22 @@ a.store:hover, .others a:hover, a.card:hover { transform: translate(-2px, -2px);
 .form-band .formcard #formTitle { text-align: center; }
 .form-band .formcard .fine { text-align: center; }
 @media (max-width: 560px) { .form-band .formcard { padding: 24px; } }
+
+/* ===== Article pages (/post/...) ===== */
+.article .wrap.narrow { gap: 20px; }
+.article h1 { font-size: clamp(2rem, 4.6vw, 3.2rem); }
+.post-hero { margin: 8px 0 4px; display: grid; gap: 10px; }
+.post-hero img { width: 100%; height: auto; max-height: 560px; object-fit: cover; border-radius: 16px; border: 2.5px solid var(--edge); box-shadow: 6px 6px 0 var(--edge); background: var(--surface-2); display: block; }
+.post-hero.fit-contain img { object-fit: contain; background: #fff; }
+.post-hero figcaption { font-size: .88rem; color: var(--muted); font-style: italic; }
+.prose { display: grid; gap: 16px; font-size: 1.06rem; line-height: 1.7; }
+.prose p, .prose li { color: var(--ink); }
+.prose h2 { font-size: clamp(1.35rem, 2.6vw, 1.7rem); margin-top: 18px; }
+.prose h3 { font-size: 1.2rem; margin-top: 12px; }
+.prose a { color: var(--pink-ink); text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
+.prose ul, .prose ol { padding-left: 22px; display: grid; gap: 6px; margin: 0; }
+.prose blockquote { margin: 0; padding: 4px 0 4px 18px; border-left: 4px solid var(--pink); font-size: 1.15rem; font-weight: 600; }
+.prose .source { font-size: .9rem; color: var(--muted); }
+.prose .bare-url { overflow-wrap: anywhere; color: var(--muted); }
+.post-video { max-width: 320px; }
+.more-link { color: var(--pink-ink); font-weight: 700; text-decoration: none; }

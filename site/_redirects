@@ -1,2 +1,3 @@
 # Old Wix URLs → new pages (301 = permanent)
 /franchising-old    /franchising    301
+/event-details/*    /franchising    301
