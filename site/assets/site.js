@@ -117,4 +117,17 @@
       btn.replaceWith(f);
     });
   });
+
+  // Social clips: YouTube Shorts load the privacy-enhanced player only when tapped
+  document.querySelectorAll("[data-yt-short]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var f = document.createElement("iframe");
+      f.className = "social-frame";
+      f.src = "https://www.youtube-nocookie.com/embed/" + btn.getAttribute("data-yt-short") + "?autoplay=1&rel=0&playsinline=1";
+      f.title = btn.getAttribute("aria-label").replace(/^Play /, "");
+      f.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture";
+      f.allowFullscreen = true;
+      btn.replaceWith(f);
+    });
+  });
 })();
