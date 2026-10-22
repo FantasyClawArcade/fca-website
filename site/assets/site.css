@@ -446,3 +446,26 @@ body.clean.manual-clean .exit-clean { display: block; }
 .why-card p { margin: 0 4px; color: var(--muted); font-size: .95rem; }
 @media (max-width: 880px) { .why-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .why-grid { grid-template-columns: 1fr; } .why-media { aspect-ratio: 4 / 3; } }
+
+/* ===== Flair: bold headlines, section labels, sticker-style cards ===== */
+:root { --headline: "Bagel Fat One", "Arial Black", "Arial Bold", sans-serif; --edge: #332C2B; }
+.accent { color: var(--pink); }
+h1, .section-head h2, .section-title, .finder-head h2 { font-family: var(--headline); font-weight: 400; letter-spacing: 0; line-height: 1.02; }
+.section-head h2, .section-title { font-size: clamp(2.1rem, 5vw, 3.6rem) !important; }
+.finder-head h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); }
+.page-hero h1, .loc-hub-hero h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; }
+.eyebrow::before { content: ""; width: 26px; height: 2px; background: currentColor; flex: none; }
+.section-head .eyebrow + h2, .copy .eyebrow + h2 { margin-top: 6px; }
+/* sticker cards: dark outline + solid offset shadow */
+.why-card, .store, .tile, .how li, .included > div, .jobs li, .others a, .card, .formcard, .qr-card {
+  border: 2.5px solid var(--edge) !important; border-radius: 16px !important; box-shadow: 6px 6px 0 var(--edge) !important; }
+.card { padding: 12px 12px 20px !important; background: var(--bg) !important; }
+.card .ph, .why-media { border-radius: 10px !important; }
+a.store:hover, .others a:hover, a.card:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--edge) !important; }
+.others a { transition: transform .15s, box-shadow .15s; }
+@media (max-width: 560px) {
+  .why-card, .store, .tile, .how li, .included > div, .jobs li, .others a, .card, .formcard, .qr-card { box-shadow: 4px 4px 0 var(--edge) !important; }
+}
+.section-head + .why-grid { margin-top: 32px; }
+.parties h2 { font-family: var(--headline); font-weight: 400; letter-spacing: 0; font-size: clamp(2.1rem, 5vw, 3.4rem); }
