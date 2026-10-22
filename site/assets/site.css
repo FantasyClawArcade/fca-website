@@ -695,3 +695,4 @@ a.social-cover { text-decoration: none; }
 .social-cover .play, .social-card:first-child .social-cover .play { top: 50%; left: 50%; }
 .social-card { align-content: start; align-self: start; }
 .social-cover .play, .social-card:first-child .social-cover .play { top: 70%; left: 50%; }
+.social-list .social-card .social-cover .play { top: 70%; left: 50%; }
