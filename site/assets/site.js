@@ -66,4 +66,28 @@
       document.querySelectorAll("video[autoplay]").forEach(function (v) { v.removeAttribute("autoplay"); v.pause(); });
     }
   } catch (e) {}
+
+  // Franchise form drawer: side tab and Request info buttons open the form from anywhere on the page
+  try {
+    var drawer = document.getElementById("fr-drawer");
+    var overlay = document.querySelector(".drawer-overlay");
+    if (drawer) {
+      var lastFocus = null;
+      var openForm = function (e) {
+        if (e) e.preventDefault();
+        lastFocus = document.activeElement;
+        drawer.setAttribute("aria-hidden", "false"); overlay.hidden = false;
+        requestAnimationFrame(function () { document.body.classList.add("drawer-open"); });
+        setTimeout(function () { drawer.querySelector(".drawer-close").focus(); }, 60);
+      };
+      var closeForm = function () {
+        document.body.classList.remove("drawer-open");
+        drawer.setAttribute("aria-hidden", "true"); setTimeout(function () { overlay.hidden = true; }, 250);
+        if (lastFocus) lastFocus.focus();
+      };
+      document.querySelectorAll("[data-open-form]").forEach(function (b) { b.addEventListener("click", openForm); });
+      document.querySelectorAll("[data-close-form]").forEach(function (b) { b.addEventListener("click", closeForm); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && document.body.classList.contains("drawer-open")) closeForm(); });
+    }
+  } catch (e) {}
 })();

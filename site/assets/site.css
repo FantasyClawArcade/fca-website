@@ -646,3 +646,21 @@ footer .footer-legal a { color: var(--muted); }
 .featured-in .fi-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 26px 0; }
 .featured-in .fi-list li { flex: 0 0 20%; padding-inline: 12px; }
 @media (max-width: 760px) { .featured-in .fi-list { gap: 20px 0; } .featured-in .fi-list li { flex-basis: 33.333%; padding-inline: 6px; } }
+
+/* ===== Franchise form drawer + "Get started" side tab ===== */
+.side-tab { position: fixed; z-index: 30; right: 0; top: 50%; transform: translateY(-50%) rotate(180deg); writing-mode: vertical-rl; background: var(--pink); color: #fff; border: 2.5px solid var(--edge); border-right: 0; border-radius: 0 12px 12px 0; padding: 18px 10px; font: 800 .9rem/1 var(--body); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; box-shadow: -4px 4px 0 var(--edge); }
+.side-tab:hover { padding-left: 14px; }
+.drawer-overlay { position: fixed; inset: 0; z-index: 40; background: rgba(51,44,43,.45); opacity: 0; transition: opacity .25s; }
+.fr-drawer { position: fixed; z-index: 41; top: 0; right: 0; bottom: 0; width: min(480px, 100vw); background: #fff; border-left: 2.5px solid var(--edge); box-shadow: -8px 0 0 var(--pink); padding: 24px 24px 32px; overflow-y: auto; transform: translateX(105%); transition: transform .25s ease; display: grid; align-content: start; gap: 12px; }
+.drawer-open .drawer-overlay { opacity: 1; }
+.drawer-open .fr-drawer { transform: none; }
+.drawer-open { overflow: hidden; }
+.drawer-head { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.drawer-head h2 { font-family: var(--headline); font-weight: 800; font-size: 1.7rem; line-height: 1.1; letter-spacing: -0.01em; }
+.drawer-close { flex: none; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--edge); background: #fff; font-size: 1.5rem; line-height: 1; cursor: pointer; }
+.drawer-sub { color: var(--muted); }
+.fr-drawer .hs-form-frame { margin-inline: -8px; }
+@media (max-width: 880px) { .side-tab { display: none; } .fr-drawer { padding: 20px 16px 28px; box-shadow: none; } }
+@media (prefers-reduced-motion: reduce) { .fr-drawer, .drawer-overlay { transition: none; } }
+.fr-drawer { visibility: hidden; transition: transform .25s ease, visibility 0s linear .25s; }
+.drawer-open .fr-drawer { visibility: visible; transition: transform .25s ease; }

@@ -31,7 +31,7 @@
       <a class="consumer" href="/birthdaysevents">Birthdays &amp; Events</a>
       <a href="/contact-us">Contact Us</a>
     </nav>
-    <a class="btn hdr-cta" href="#anchor1">Request info</a>
+    <a class="btn hdr-cta" href="#anchor1" data-open-form>Request info</a>
   </div>
 </header>
 
@@ -45,7 +45,7 @@
         <p class="sub">Own the Business of Fun</p>
         <p class="lede">Bring a hot claw arcade franchise opportunity to a high-traffic market in your city. Fantasy Claw Arcade gives you a distinctive claw arcade franchise concept, with five arcades open and more on the way, and full support from signing through opening, designed for qualified operators who want to stand out and drive repeat visits.</p>
         <div class="hero-actions">
-          <a class="btn" href="#anchor1">Request info</a>
+          <a class="btn" href="#anchor1" data-open-form>Request info</a>
           <a class="btn ghost" href="#investment">See the investment</a>
         </div>
         <p class="fine hero-fine">Best suited for hands-on operators and experienced multi-unit leaders.</p>
@@ -247,7 +247,18 @@
   </section>
 
 </main>
-<div class="quick" role="region" aria-label="Franchise quick access"><a class="btn" href="#anchor1">Request franchise info</a></div>
+<button type="button" class="side-tab" data-open-form aria-haspopup="dialog" aria-controls="fr-drawer">Get started</button>
+<div class="drawer-overlay" data-close-form hidden></div>
+<aside class="fr-drawer" id="fr-drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+  <div class="drawer-head">
+    <h2 id="drawerTitle">Start your journey <span class="accent">here</span>.</h2>
+    <button type="button" class="drawer-close" data-close-form aria-label="Close the form">×</button>
+  </div>
+  <p class="drawer-sub">Share a few details and our franchise team will reach out to set up an intro call.</p>
+  <div class="hs-form-frame" data-region="na2" data-form-id="6e593274-ec53-4c02-a072-43a20a602fbf" data-portal-id="245740388"></div>
+  <p class="fine">Best suited for hands-on operators and experienced multi-unit leaders.</p>
+</aside>
+<div class="quick" role="region" aria-label="Franchise quick access"><a class="btn" href="#anchor1" data-open-form>Request franchise info</a></div>
 <footer>
   <div class="wrap">
     <div>
