@@ -634,3 +634,15 @@ footer .footer-legal a { color: var(--muted); }
 @media (max-width: 760px) { .cta-band .wrap { grid-template-columns: 1fr; box-shadow: 5px 5px 0 var(--pink); margin-inline: 16px; width: auto; } }
 .partner-links { display: grid; gap: 8px; justify-items: start; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+/* 9 logos: 5 + 4 on desktop, 3 x 3 on phones */
+.featured-in .fi-list { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 26px 28px; }
+.featured-in .fi-list img { object-fit: contain; }
+.fi-list img.fi-wsj { height: 17px; } .fi-list img.fi-rj { height: 27px; } .fi-list img.fi-ft { height: 23px; }
+@media (max-width: 760px) {
+  .featured-in .fi-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 14px; }
+  .fi-list img.fi-wsj { height: 10px; } .fi-list img.fi-costar { height: 22px; } .fi-list img.fi-ft { height: 14px; } .fi-list img.fi-rj { height: 17px; }
+  .fi-list img.fi-two { height: 28px; } .fi-list img.fi-klas { height: 36px; } .fi-list img.fi-hood { height: 17px; }
+}
+.featured-in .fi-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 26px 0; }
+.featured-in .fi-list li { flex: 0 0 20%; padding-inline: 12px; }
+@media (max-width: 760px) { .featured-in .fi-list { gap: 20px 0; } .featured-in .fi-list li { flex-basis: 33.333%; padding-inline: 6px; } }
