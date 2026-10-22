@@ -706,3 +706,6 @@ a.social-cover { text-decoration: none; }
 .fi-list img.fi-cjn { height: 46px; } @media (max-width: 760px) { .fi-list img.fi-cjn { height: 38px; } }
 @media (max-width: 760px) { .featured-in .fi-list li { flex-basis: 50%; } }
 .hero .ph.has-img { border: 2.5px solid var(--edge); border-radius: 18px; box-shadow: 8px 8px 0 var(--pink); } @media (max-width: 760px) { .hero .ph.has-img { box-shadow: 5px 5px 0 var(--pink); } }
+.page-hero .ph.has-img, .event-photo { border: 2.5px solid var(--edge); border-radius: 18px; box-shadow: 8px 8px 0 var(--pink); }
+.event-photo { margin-top: 24px; aspect-ratio: 4 / 3; }
+@media (max-width: 760px) { .page-hero .ph.has-img, .event-photo { box-shadow: 5px 5px 0 var(--pink); } }
