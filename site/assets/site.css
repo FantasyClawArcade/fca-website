@@ -703,3 +703,5 @@ a.social-cover { text-decoration: none; }
 .video-modal-close { position: absolute; top: -52px; right: 0; }
 .modal-open { overflow: hidden; }
 .social-frame { overflow: hidden; }
+.fi-list img.fi-cjn { height: 46px; } @media (max-width: 760px) { .fi-list img.fi-cjn { height: 38px; } }
+@media (max-width: 760px) { .featured-in .fi-list li { flex-basis: 50%; } }
