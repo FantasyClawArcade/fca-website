@@ -731,3 +731,4 @@ footer .wrap > div:first-child .tag { margin-inline: auto; }
 footer .wrap > div:first-child .social { justify-content: center; }
 /* Footer: equal space between all four columns on wide screens */
 @media (min-width: 881px) { footer .wrap:not(.footer-legal) { grid-template-columns: repeat(4, auto); justify-content: space-between; column-gap: 40px; } }
+.fit-note, .fine.fit-note { font-size: 1rem; color: var(--ink); }
