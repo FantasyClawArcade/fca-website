@@ -721,3 +721,4 @@ a.social-cover { text-decoration: none; }
 .about .copy { align-content: center; }
 @media (min-width: 881px) { .about > .ph.has-img { position: relative; min-height: 380px; } .about > .ph.has-img img { position: absolute; inset: 0; width: 100%; height: 100%; } .about .copy { align-content: start; } }
 .card-img { display: block; } .card-img .ph img { transition: transform .25s; } .card-img:hover .ph img { transform: scale(1.04); }
+.how-hook { font-family: var(--body); font-weight: 600; font-size: clamp(1.02rem, 1.6vw, 1.12rem); letter-spacing: 0; } .how-hook strong { font-weight: 800; }
