@@ -155,4 +155,19 @@
       document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !vm.hidden) closeVm(); });
     }
   } catch (e) {}
+
+  // Phone menu: the Menu button opens and closes the main navigation
+  try {
+    var navBtn = document.querySelector(".nav-toggle");
+    var head = document.querySelector(".site-head");
+    if (navBtn && head) {
+      navBtn.addEventListener("click", function () {
+        var open = head.classList.toggle("nav-open");
+        navBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && head.classList.contains("nav-open")) { head.classList.remove("nav-open"); navBtn.setAttribute("aria-expanded", "false"); navBtn.focus(); }
+      });
+    }
+  } catch (e) {}
 })();
