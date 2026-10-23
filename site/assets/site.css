@@ -746,7 +746,7 @@ section { padding-block: clamp(36px, 5.5vw, 68px); }
 .hdr-cta { padding: 12px 20px; font-size: .9rem; }
 .nav-toggle { display: none; }
 
-@media (max-width: 880px) {
+@media (max-width: 1100px) {
   .site-head .wrap { flex-wrap: nowrap; padding-block: 8px; gap: 10px; }
   .site-head .logo { margin-right: auto; }
   .logo-word { height: 42px; }
@@ -771,3 +771,7 @@ section { padding-block: clamp(36px, 5.5vw, 68px); }
   .hero .actions, .hero-actions, .parties .actions { flex-wrap: nowrap; gap: 10px; }
   .hero .actions .btn, .hero-actions .btn, .parties .actions .btn { flex: 1 1 0; min-width: 0; padding: 14px 10px; font-size: .78rem; letter-spacing: .04em; white-space: nowrap; }
 }
+
+.nav { gap: 4px 24px; font-size: .9rem; }
+@media (min-width: 1101px) { .site-head .wrap { flex-wrap: nowrap; } .nav { flex-wrap: nowrap; white-space: nowrap; } }
+.hdr-cta, .site-head .logo { flex: none; white-space: nowrap; } @media (min-width: 1101px) { .nav { gap: 4px 22px; font-size: .88rem; } }
