@@ -720,3 +720,4 @@ a.social-cover { text-decoration: none; }
 .about > .ph.has-img { border: 2.5px solid var(--edge); border-radius: 18px; box-shadow: 8px 8px 0 var(--pink); }
 .about .copy { align-content: center; }
 @media (min-width: 881px) { .about > .ph.has-img { position: relative; min-height: 380px; } .about > .ph.has-img img { position: absolute; inset: 0; width: 100%; height: 100%; } .about .copy { align-content: start; } }
+.card-img { display: block; } .card-img .ph img { transition: transform .25s; } .card-img:hover .ph img { transform: scale(1.04); }
