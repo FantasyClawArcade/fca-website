@@ -833,3 +833,8 @@ footer .footer-legal { padding-block: 14px 18px; }
   .machine { grid-row: span 4; grid-template-rows: subgrid; row-gap: 8px; padding-bottom: 28px; }
   .machine h3 { align-self: end; }
 }
+/* Store cards: line up name, location, hours, phone and buttons across each row */
+@supports (grid-template-rows: subgrid) {
+  .store { grid-row: span 5; grid-template-rows: subgrid; row-gap: 10px; }
+  .store .today, .store .phone, .store .acts { align-self: start; }
+}
