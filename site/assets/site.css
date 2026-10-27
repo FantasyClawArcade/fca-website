@@ -442,7 +442,7 @@ body.clean.manual-clean .exit-clean { display: block; }
 .why-card { display: grid; gap: 10px; align-content: start; min-width: 0; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 12px 18px; }
 .why-media { margin: 0; aspect-ratio: 4 / 5; max-width: 100%; border-radius: calc(var(--radius) - 4px); overflow: hidden; background: var(--surface-2); }
 .why-media img, .why-media video { display: block; width: 100%; height: 100%; object-fit: cover; }
-.why-card h4 { margin: 6px 4px 0; font-family: var(--display); font-weight: 700; font-size: 1.1rem; line-height: 1.2; }
+.why-card h3 { margin: 6px 4px 0; font-family: var(--display); font-weight: 700; font-size: 1.1rem; line-height: 1.2; }
 .why-card p { margin: 0 4px; color: var(--muted); font-size: .95rem; }
 @media (max-width: 880px) { .why-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .why-grid { grid-template-columns: 1fr; } .why-media { aspect-ratio: 4 / 3; } }
@@ -787,3 +787,5 @@ section { padding-block: clamp(36px, 5.5vw, 68px); }
 footer .wrap:not(.footer-legal) { padding-block: 36px 28px; }
 footer .footer-legal { padding-block: 14px 18px; }
 @media (min-width: 1101px) { .on-franchising .nav { font-size: .86rem; gap: 4px 14px; } .on-franchising .site-head .wrap { gap: 10px 28px; } }
+.city h2.city-name, :root[data-dir="c"] .city h2.city-name { font-family: var(--headline); font-weight: 800; font-size: clamp(1.35rem, 2.4vw, 1.7rem) !important; line-height: 1.15; letter-spacing: -0.01em; text-transform: none; color: var(--ink); margin: 8px 0 16px; display: flex; align-items: center; gap: 10px; }
+.city h2.city-name::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--pink); flex: none; }
