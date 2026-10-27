@@ -825,3 +825,5 @@ footer .footer-legal { padding-block: 14px 18px; }
 .map-cta h2 { font-family: var(--headline); font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.1; letter-spacing: -0.01em; }
 .city { scroll-margin-top: 90px; }
 @media (max-width: 880px) { .map-wrap { grid-template-columns: 1fr; } .map-card { padding: 10px; box-shadow: 5px 5px 0 var(--edge); } .pin-label { font-size: .7rem; padding: 3px 6px; } .pin-label b { font-size: .62rem; } .pin-dot { width: 14px; height: 14px; } .map-cta { box-shadow: 5px 5px 0 var(--pink); padding: 22px; } }
+/* Our Claws: spec label above each description */
+.machine .machine-spec { color: var(--ink, #111); font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; margin-bottom: -2px; }
