@@ -11,8 +11,19 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Cache images, video, CSS and JS for a week (files are replaced, not renamed, when they change)
+# Cache images and video for a week (files are replaced, not renamed, when they change)
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# CSS and JS change often: browsers check for a newer copy on every visit
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
