@@ -807,3 +807,21 @@ footer .footer-legal { padding-block: 14px 18px; }
 #siteSearch mark { background: #FCE4F1; color: var(--ink); padding: 0 2px; border-radius: 3px; }
 #siteSearch .pagefind-ui__result-link { color: var(--ink); }
 #siteSearch .pagefind-ui__result-link:hover { color: var(--pink-ink); }
+
+/* ===== Locations map ===== */
+.map-band { padding-top: 0; }
+.map-wrap { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 32px; align-items: center; }
+.map-card { background: #fff; border: 2.5px solid var(--edge); border-radius: 18px; box-shadow: 8px 8px 0 var(--edge); padding: 20px; }
+.us-map { position: relative; }
+.us-map img { display: block; width: 100%; height: auto; }
+.pin { position: absolute; transform: translate(-9px, -9px); display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); z-index: 1; }
+.pin-dot { width: 18px; height: 18px; border-radius: 50%; background: var(--pink); border: 3px solid #fff; box-shadow: 0 0 0 2px var(--pink), 0 0 0 8px rgba(222,11,131,.18); flex: none; transition: transform .15s; }
+.pin-label { background: #fff; border: 2px solid var(--edge); border-radius: 10px; padding: 5px 9px; font: 800 .85rem/1.15 var(--headline); white-space: nowrap; box-shadow: 3px 3px 0 var(--edge); }
+.pin-label b { display: block; font: 600 .72rem/1.2 var(--body); color: var(--muted); }
+.pin-left { flex-direction: row-reverse; transform: translate(calc(-100% + 9px), -9px); }
+.pin:hover .pin-dot, .pin:focus-visible .pin-dot { transform: scale(1.2); }
+.pin:hover .pin-label { border-color: var(--pink); color: var(--pink-ink); }
+.map-cta { display: grid; gap: 12px; background: #FCE4F1; border: 2.5px solid var(--edge); border-radius: 18px; box-shadow: 8px 8px 0 var(--pink); padding: 28px; }
+.map-cta h2 { font-family: var(--headline); font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.1; letter-spacing: -0.01em; }
+.city { scroll-margin-top: 90px; }
+@media (max-width: 880px) { .map-wrap { grid-template-columns: 1fr; } .map-card { padding: 10px; box-shadow: 5px 5px 0 var(--edge); } .pin-label { font-size: .7rem; padding: 3px 6px; } .pin-label b { font-size: .62rem; } .pin-dot { width: 14px; height: 14px; } .map-cta { box-shadow: 5px 5px 0 var(--pink); padding: 22px; } }
