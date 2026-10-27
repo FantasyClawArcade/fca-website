@@ -170,4 +170,31 @@
       });
     }
   } catch (e) {}
+
+  // Site search (Pagefind): loads only when the search button is used
+  try {
+    var sm = document.getElementById("searchModal");
+    if (sm) {
+      var loaded = false, opener2 = null;
+      var openS = function () {
+        opener2 = document.activeElement; sm.hidden = false; document.body.classList.add("modal-open");
+        if (!loaded) {
+          loaded = true;
+          var css = document.createElement("link"); css.rel = "stylesheet"; css.href = "/pagefind/pagefind-ui.css"; document.head.appendChild(css);
+          var sc = document.createElement("script"); sc.src = "/pagefind/pagefind-ui.js";
+          sc.onload = function () {
+            new PagefindUI({ element: "#siteSearch", showSubResults: true, showImages: false, resetStyles: false, translations: { placeholder: "Search locations, parties, franchising…" } });
+            setTimeout(function () { var i = sm.querySelector("input"); if (i) i.focus(); }, 50);
+          };
+          sc.onerror = function () { document.getElementById("siteSearch").innerHTML = "<p>Search isn't available right now.</p>"; };
+          document.head.appendChild(sc);
+        } else { var i = sm.querySelector("input"); if (i) i.focus(); }
+      };
+      var closeS = function () { sm.hidden = true; document.body.classList.remove("modal-open"); if (opener2) opener2.focus(); };
+      document.querySelectorAll("[data-open-search]").forEach(function (b) { b.addEventListener("click", openS); });
+      sm.querySelectorAll("[data-close-search]").forEach(function (b) { b.addEventListener("click", closeS); });
+      sm.addEventListener("click", function (e) { if (e.target === sm) closeS(); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !sm.hidden) closeS(); });
+    }
+  } catch (e) {}
 })();

@@ -1,8 +1,9 @@
 # Netlify settings for the Fantasy Claw Arcade website.
-# The site is plain HTML: no build step. Netlify publishes the "site" folder.
+# The site is plain HTML. Netlify publishes the "site" folder after building the search index.
 [build]
   publish = "site"
-  command = ""
+  # Builds the site search index (Pagefind) from the finished pages
+  command = "npx -y pagefind@1.5.2 --site site"
 
 [[headers]]
   for = "/*"
