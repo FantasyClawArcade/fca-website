@@ -845,3 +845,22 @@ footer .footer-legal { padding-block: 14px 18px; }
 .faq-page h2[id] { scroll-margin-top: 96px; }
 .faq details > div p + p, .faq details > div ul + p, .faq details > div p + ul { margin-top: 10px; }
 .faq details > div ul { padding-left: 1.2em; display: grid; gap: 4px; }
+/* Oct 27 partner review: Franchise Info button and pinned header on every page */
+.hdr-cta { display: inline-flex; }
+@media (min-width: 881px) {
+  .site-head { position: sticky; top: 0; z-index: 20; box-shadow: 0 2px 12px rgba(51,44,43,.06); }
+  [id] { scroll-margin-top: 104px; }
+}
+@media (min-width: 1101px) { .nav { font-size: .86rem; gap: 4px 14px; } .site-head .wrap { gap: 10px 28px; } }
+@media (min-width: 1101px) and (max-width: 1260px) {
+  .nav { font-size: .8rem; gap: 4px 10px; letter-spacing: .04em; }
+  .site-head .wrap { gap: 10px 18px; }
+  .hdr-cta { padding: 10px 14px; font-size: .82rem; }
+}
+@media (max-width: 560px) {
+  .nav-toggle-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .hdr-cta { padding: 10px 12px; font-size: .74rem; letter-spacing: .04em; }
+  .site-head .wrap { gap: 8px; }
+}
+@media (max-width: 380px) { .site-head .logo-word { height: 34px; } .search-btn, .nav-toggle { width: 38px; height: 38px; } .hdr-cta { padding: 9px 10px; font-size: .7rem; } .site-head .wrap { gap: 6px; } }
+@media (max-width: 560px) { .nav-toggle { padding: 0; width: 44px; justify-content: center; } } @media (max-width: 380px) { .nav-toggle { width: 38px; } }
