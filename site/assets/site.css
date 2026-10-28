@@ -838,3 +838,10 @@ footer .footer-legal { padding-block: 14px 18px; }
   .store { grid-row: span 5; grid-template-rows: subgrid; row-gap: 10px; }
   .store .today, .store .phone, .store .acts { align-self: start; }
 }
+/* FAQ: topic links at the top, lists inside answers */
+.faq-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.faq-jump a { padding: 8px 14px; border-radius: 999px; box-shadow: inset 0 0 0 1.5px var(--line); color: var(--ink); text-decoration: none; font-weight: 700; font-size: .85rem; }
+.faq-jump a:hover { box-shadow: inset 0 0 0 1.5px var(--pink); color: var(--pink-ink); }
+.faq-page h2[id] { scroll-margin-top: 96px; }
+.faq details > div p + p, .faq details > div ul + p, .faq details > div p + ul { margin-top: 10px; }
+.faq details > div ul { padding-left: 1.2em; display: grid; gap: 4px; }
