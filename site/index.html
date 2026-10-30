@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-dir="c">
+<html lang="en" data-dir="c" class="theme-dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -18,9 +18,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&family=Poppins:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/dark.css">
+<script>document.documentElement.classList.add("js")</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.fantasyclawarcade.com/#org", "name": "Fantasy Claw Arcade", "url": "https://www.fantasyclawarcade.com/", "logo": "https://www.fantasyclawarcade.com/assets/fantasy-claw-arcade-wizard-logo.webp", "sameAs": ["https://www.instagram.com/fantasyclawarcade/", "https://www.tiktok.com/@fantasyclawarcade", "https://www.youtube.com/channel/UCHkBQAeIHwoYx_YmUwXQQxw", "https://www.facebook.com/p/Fantasy-Claw-Arcade-61574986134873/", "https://www.linkedin.com/company/fantasy-claw-arcade-franchise-llc/"]}, {"@type": "WebSite", "@id": "https://www.fantasyclawarcade.com/#site", "url": "https://www.fantasyclawarcade.com/", "name": "Fantasy Claw Arcade", "publisher": {"@id": "https://www.fantasyclawarcade.com/#org"}}]}</script>
 </head>
-<body>
+<body class="home-x">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head">
   <div class="wrap">
@@ -41,138 +43,233 @@
 
 <main id="main" data-pagefind-body>
 
-  <section class="hero">
+  <section class="xh" aria-labelledby="xhTitle">
+    <div class="xh-bg" aria-hidden="true"><img src="/assets/photos/fantasy-claw-arcade-area15-claw-machine-rows.webp" alt="" width="1280" height="960" fetchpriority="high"></div>
+    <div class="xh-glow" aria-hidden="true"></div>
+    <div class="xh-sparks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="xh-claw" aria-hidden="true"><span class="xh-cable"></span><svg class="claw-svg" viewBox="0 0 80 96" aria-hidden="true"><rect x="28" y="0" width="24" height="18" rx="5" class="claw-head"/><rect x="34" y="16" width="12" height="10" rx="3" class="claw-neck"/><g class="claw-arm claw-arm-l"><path d="M36 24 L18 46 Q12 56 22 70" /></g><g class="claw-arm claw-arm-r"><path d="M44 24 L62 46 Q68 56 58 70" /></g><g class="claw-arm claw-arm-m"><path d="M40 26 L40 66" /></g></svg></div>
+    <div class="wrap xh-inner">
+      <h1 id="xhTitle"><span class="xh-kicker">Fantasy Claw Arcade: claw machine arcades in Las Vegas, Honolulu and Columbus</span><span class="xh-big"><span class="w">Play.</span> <span class="w">Win.</span> <span class="w accent">Trade&nbsp;up.</span></span></h1>
+      <p class="xh-sub">Rows of claw machines, prizes you actually want and new ones on every visit. Japanese-inspired, and now franchising across the U.S.</p>
+      <div class="xh-actions"><a class="btn" href="#finder">Find a location</a><a class="btn ghost" href="/franchising">Own a franchise</a></div>
+    </div>
+    <a class="xh-scroll" href="#finder"><span>Scroll</span><i aria-hidden="true"></i></a>
+  </section>
+
+  <div class="ticker" aria-label="Highlights"><ul><li>Las Vegas</li><li>Honolulu</li><li>Columbus</li><li>Home of the 10-claw Claw King</li><li>New prizes on every visit</li><li>Now franchising</li></ul><ul aria-hidden="true"><li>Las Vegas</li><li>Honolulu</li><li>Columbus</li><li>Home of the 10-claw Claw King</li><li>New prizes on every visit</li><li>Now franchising</li></ul></div>
+
+  <section class="xsec" id="finder" aria-labelledby="finder-title">
     <div class="wrap">
-      <div>
-        <h1><a href="/franchising">Fantasy Claw <span>Arcade</span></a></h1>
-        <h2><a href="/franchising">Now Franchising</a></h2>
-        <div class="actions">
-          <a class="btn" href="#finder">Find a location</a>
-          <a class="btn ghost" href="/franchising">Own a franchise</a>
+      <div class="xhead" data-reveal>
+        <h2 id="finder-title">Find your <span class="accent">arcade</span></h2>
+        <p>Pick a store for today’s hours, directions and parking.</p>
+      </div>
+    </div>
+    <div class="xs-rail" tabindex="0" aria-label="Fantasy Claw Arcade locations">
+        <article class="xs-store" data-reveal>
+          <div class="xs-media"><img src="/assets/photos/fantasy-claw-arcade-fashion-show-storefront.webp" alt="Fantasy Claw Arcade storefront at Fashion Show Mall, Las Vegas" width="1200" height="800" loading="lazy"></div>
+          <div class="xs-body">
+            <p class="xs-city">Las Vegas, NV</p>
+            <h3>Fashion Show Mall</h3>
+            <p class="xs-where">2nd floor, next to Dillard&#x27;s</p>
+            <span class="today" data-today="fashionshow"><i></i><span>Open today</span></span>
+            <div class="xs-acts"><a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Fantasy+Claw+Arcade+Fashion+Show+Mall+Las+Vegas" target="_blank" rel="noopener">Directions</a><a class="info" href="/lasvegas-fashionshow">Store info</a></div>
+            <a class="xs-phone" href="tel:+17253280446">(725) 328-0446</a>
+          </div>
+        </article>
+        <article class="xs-store" data-reveal>
+          <div class="xs-media"><img src="/assets/photos/fantasy-claw-arcade-area15-interior.webp" alt="Rows of claw machines inside Fantasy Claw Arcade at AREA15" width="1200" height="800" loading="lazy"></div>
+          <div class="xs-body">
+            <p class="xs-city">Las Vegas, NV</p>
+            <h3>AREA15</h3>
+            <p class="xs-where">1st floor, past Omega Mart</p>
+            <span class="today" data-today="area15"><i></i><span>Open today</span></span>
+            <div class="xs-acts"><a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Fantasy+Claw+Arcade+AREA15+Las+Vegas" target="_blank" rel="noopener">Directions</a><a class="info" href="/lasvegas-area15">Store info</a></div>
+            <a class="xs-phone" href="tel:+17253280446">(725) 328-0446</a>
+          </div>
+        </article>
+        <article class="xs-store" data-reveal>
+          <div class="xs-media"><img src="/assets/photos/fantasy-claw-arcade-miracle-mile-shops-storefront.webp" alt="Fantasy Claw Arcade storefront at Miracle Mile Shops, Las Vegas" width="1200" height="800" loading="lazy"></div>
+          <div class="xs-body">
+            <p class="xs-city">Las Vegas, NV</p>
+            <h3>Miracle Mile Shops</h3>
+            <p class="xs-where">Next to Subway, by the parking garage</p>
+            <span class="today" data-today="miraclemile"><i></i><span>Open today</span></span>
+            <div class="xs-acts"><a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Fantasy+Claw+Arcade+Miracle+Mile+Shops+Las+Vegas" target="_blank" rel="noopener">Directions</a><a class="info" href="/lasvegas-miraclemile">Store info</a></div>
+            <a class="xs-phone" href="tel:+17252494599">(725) 249-4599</a>
+          </div>
+        </article>
+        <article class="xs-store" data-reveal>
+          <div class="xs-media"><img src="/assets/photos/fantasy-claw-arcade-international-market-place-storefront.webp" alt="Fantasy Claw Arcade storefront at International Market Place, Honolulu" width="1200" height="800" loading="lazy"></div>
+          <div class="xs-body">
+            <p class="xs-city">Honolulu, HI</p>
+            <h3>International Market Place</h3>
+            <p class="xs-where">Queen&#x27;s Court, Level 1</p>
+            <span class="today" data-today="imp"><i></i><span>Open today</span></span>
+            <div class="xs-acts"><a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Fantasy+Claw+Arcade+International+Market+Place+Honolulu" target="_blank" rel="noopener">Directions</a><a class="info" href="/honolulu-internationalmarketplace">Store info</a></div>
+            <a class="xs-phone" href="tel:+17253280446">(725) 328-0446</a>
+          </div>
+        </article>
+        <article class="xs-store" data-reveal>
+          <div class="xs-media"><span class="xs-soon-art" aria-hidden="true"><img src="/assets/fantasy-claw-arcade-wizard-logo.webp" alt="" width="360" height="375" loading="lazy"></span><span class="xs-badge">Opening December 2026</span></div>
+          <div class="xs-body">
+            <p class="xs-city">Honolulu, HI</p>
+            <h3>Ala Moana Center</h3>
+            <p class="xs-where">Ala Moana Center</p>
+            <span class="today soon"><i></i><span>Opening December 2026</span></span>
+            <div class="xs-acts"><a class="info" href="/honolulu-alamoana">Store info</a></div>
+            <a class="xs-phone" href="tel:+17253280446">(725) 328-0446</a>
+          </div>
+        </article>
+        <article class="xs-store" data-reveal>
+          <div class="xs-media"><img src="/assets/photos/fantasy-claw-arcade-easton-storefront-prize-portal.webp" alt="Fantasy Claw Arcade storefront at Easton Town Center, Columbus" width="1200" height="800" loading="lazy"></div>
+          <div class="xs-body">
+            <p class="xs-city">Columbus, OH</p>
+            <h3>Easton Town Center</h3>
+            <p class="xs-where">2nd floor of the Station Building</p>
+            <span class="today" data-today="easton"><i></i><span>Open today</span></span>
+            <div class="xs-acts"><a class="go" href="https://www.google.com/maps/search/?api=1&amp;query=Fantasy+Claw+Arcade+Easton+Town+Center+Columbus" target="_blank" rel="noopener">Directions</a><a class="info" href="/columbus-easton">Store info</a></div>
+            <a class="xs-phone" href="tel:+16145081511">(614) 508-1511</a>
+          </div>
+        </article>
+        <article class="xs-store xs-more" data-reveal>
+          <p class="xs-city">Now franchising</p>
+          <h3>Don’t see your <span class="accent">city</span>?</h3>
+          <p>Bring Fantasy Claw Arcade to your market. We’re awarding franchise territories across the U.S.</p>
+          <a class="btn" href="/franchising">Explore franchising</a>
+        </article>
+    </div>
+  </section>
+
+  <section class="xsec xhow" aria-labelledby="how-title">
+    <div class="wrap xhow-grid">
+      <div class="xhow-copy">
+        <h2 id="how-title" class="xtitle" data-reveal>How it <span class="accent">works</span></h2>
+        <ol class="xsteps">
+          <li class="xstep" data-step="1"><span class="n">1</span><div><h3>Pick your machine</h3><p>Walk the rows and find the prize you want, from mini claws to our signature 10-claw machine.</p></div></li>
+          <li class="xstep" data-step="2"><span class="n">2</span><div><h3>Line up your shot</h3><p>Steer the claw into position, drop it and go for the prize.</p></div></li>
+          <li class="xstep" data-step="3"><span class="n">3</span><div><h3>Take home your prizes</h3><p>Every prize you grab is yours to keep: trending plush, anime and kawaii goods, toys and novelty, premium jumbo prizes and claw exclusives.</p></div></li>
+        </ol>
+        <p class="xhook" data-reveal><span aria-hidden="true">✦</span> We bring in <strong class="accent">new prizes</strong> regularly, so there's always something new to go for.</p>
+      </div>
+      <div class="xhow-stage">
+        <div class="xm" data-state="1" aria-hidden="true">
+          <div class="xm-top"><span class="xm-dot"></span>FANTASY CLAW<span class="xm-dot"></span></div>
+          <div class="xm-glass">
+            <span class="xm-rail"></span>
+            <div class="xm-claw"><span class="xm-cable"></span><svg class="claw-svg" viewBox="0 0 80 96" aria-hidden="true"><rect x="28" y="0" width="24" height="18" rx="5" class="claw-head"/><rect x="34" y="16" width="12" height="10" rx="3" class="claw-neck"/><g class="claw-arm claw-arm-l"><path d="M36 24 L18 46 Q12 56 22 70" /></g><g class="claw-arm claw-arm-r"><path d="M44 24 L62 46 Q68 56 58 70" /></g><g class="claw-arm claw-arm-m"><path d="M40 26 L40 66" /></g></svg><span class="xm-held"></span></div>
+            <div class="xm-pile"><span class="xp xp1" aria-hidden="true"></span><span class="xp xp2" aria-hidden="true"></span><span class="xp xp3" aria-hidden="true"></span><span class="xp xp4" aria-hidden="true"></span><span class="xp xp5" aria-hidden="true"></span><span class="xp xp6" aria-hidden="true"></span><span class="xp xp7" aria-hidden="true"></span><span class="xp xp8" aria-hidden="true"></span></div>
+            <span class="xm-chute">PRIZE</span>
+            <span class="xm-win">You got it!</span>
+          </div>
+          <div class="xm-panel"><span class="xm-stick"></span><span class="xm-button"></span><span class="xm-tokens">Tokens</span></div>
         </div>
       </div>
-      <figure class="ph has-img" ><img src="/assets/photos/fantasy-claw-arcade-fashion-show-kids-wizard-hats.webp" alt="Three kids in Fantasy Claw Arcade wizard hats smiling among the claw machines at Fashion Show Mall, Las Vegas" loading="eager" fetchpriority="high" style="object-position:center 30%"></figure>
     </div>
   </section>
 
-  <section class="band" id="finder" aria-labelledby="finder-title">
-    <div class="wrap">
-      <div class="finder-head">
-        <h2 id="finder-title">Find a <span class="accent">location</span></h2>
-      </div>
-      <div class="cities">
-        <div class="city"><h2 class="city-name">Las Vegas, NV</h2><div class="stores">
-          <article class="store">
-            <b>Fashion Show Mall</b>
-            <span class="where">2nd floor, next to Dillard&#x27;s</span>
-            <span class="today" data-today="fashionshow"><i></i><span>Open today</span></span>
-            <span class="phone">(725) 328-0446</span>
-            <div class="acts"><a class="go" href="https://www.google.com/maps/search/?api=1&query=Fantasy+Claw+Arcade+Fashion+Show+Mall+Las+Vegas" target="_blank" rel="noopener">Directions</a><a class="call" href="tel:+17253280446">Call</a><a class="info" href="/lasvegas-fashionshow">Store info</a></div>
-          </article>
-          <article class="store">
-            <b>AREA15</b>
-            <span class="where">1st floor, past Omega Mart</span>
-            <span class="today" data-today="area15"><i></i><span>Open today</span></span>
-            <span class="phone">(725) 328-0446</span>
-            <div class="acts"><a class="go" href="https://www.google.com/maps/search/?api=1&query=Fantasy+Claw+Arcade+AREA15+Las+Vegas" target="_blank" rel="noopener">Directions</a><a class="call" href="tel:+17253280446">Call</a><a class="info" href="/lasvegas-area15">Store info</a></div>
-          </article>
-          <article class="store">
-            <b>Miracle Mile Shops</b>
-            <span class="where">Next to Subway, by the parking garage</span>
-            <span class="today" data-today="miraclemile"><i></i><span>Open today</span></span>
-            <span class="phone">(725) 249-4599</span>
-            <div class="acts"><a class="go" href="https://www.google.com/maps/search/?api=1&query=Fantasy+Claw+Arcade+Miracle+Mile+Shops+Las+Vegas" target="_blank" rel="noopener">Directions</a><a class="call" href="tel:+17252494599">Call</a><a class="info" href="/lasvegas-miraclemile">Store info</a></div>
-          </article>
-        </div></div>
-        <div class="city"><h2 class="city-name">Honolulu, HI</h2><div class="stores">
-          <article class="store">
-            <b>International Market Place</b>
-            <span class="where">Queen&#x27;s Court, Level 1</span>
-            <span class="today" data-today="imp"><i></i><span>Open today</span></span>
-            <span class="phone">(725) 328-0446</span>
-            <div class="acts"><a class="go" href="https://www.google.com/maps/search/?api=1&query=Fantasy+Claw+Arcade+International+Market+Place+Honolulu" target="_blank" rel="noopener">Directions</a><a class="call" href="tel:+17253280446">Call</a><a class="info" href="/honolulu-internationalmarketplace">Store info</a></div>
-          </article>
-          <article class="store">
-            <b>Ala Moana Center</b>
-            <span class="where">Ala Moana Center</span>
-            <span class="today soon"><i></i><span>Opening December 2026</span></span>
-            <span class="phone">(725) 328-0446</span>
-            <div class="acts"><a class="go" href="https://www.google.com/maps/search/?api=1&query=Fantasy+Claw+Arcade+Ala+Moana+Center+Honolulu" target="_blank" rel="noopener">Directions</a><a class="call" href="tel:+17253280446">Call</a><a class="info" href="/honolulu-alamoana">Store info</a></div>
-          </article>
-        </div></div>
-        <div class="city"><h2 class="city-name">Columbus, OH</h2><div class="stores">
-          <article class="store">
-            <b>Easton Town Center</b>
-            <span class="where">2nd floor of the Station Building</span>
-            <span class="today" data-today="easton"><i></i><span>Open today</span></span>
-            <span class="phone">(614) 508-1511</span>
-            <div class="acts"><a class="go" href="https://www.google.com/maps/search/?api=1&query=Fantasy+Claw+Arcade+Easton+Town+Center+Columbus" target="_blank" rel="noopener">Directions</a><a class="call" href="tel:+16145081511">Call</a><a class="info" href="/columbus-easton">Store info</a></div>
-          </article>
-        </div></div>
+  <section class="xsec xking" aria-labelledby="king-title">
+    <div class="wrap xking-grid">
+      <figure class="xking-media" data-reveal><img src="/assets/claws/fantasy-claw-arcade-claw-king-machine.webp" alt="The Claw King, a claw machine with ten claws, at Fantasy Claw Arcade" width="750" height="1000" loading="lazy"></figure>
+      <div class="xking-copy" data-reveal>
+        <p class="xeyebrow">Our signature machine</p>
+        <h2 id="king-title" class="xtitle">Ten claws. <span class="accent">One drop.</span></h2>
+        <p>Ten claws drop together, so every play has ten chances to grab something.</p>
+        <p class="xmuted">Plus traditional cranes, multi-player and mini claws, digital claws, Cut-2-Win, the Mystic Catcher, the Dragon’s Wheel and the Wizard’s Vault. The mix varies by location.</p>
+        <a class="btn ghost" href="/our-claws">Meet all twelve machines</a>
       </div>
     </div>
+    <ul class="xmachines" aria-label="Our claw machines"><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-traditional-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Traditional Claws</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-claw-king-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Claw King</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-multi-player-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Multi-Player Claws</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-slim-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Slim Claws</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-mini-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Mini Claws</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-digital-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Digital Claws</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-cut-2-win-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Cut-2-Win</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-cut-2-win-multi-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Cut-2-Win Multi</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-mystic-catcher-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Mystic Catcher</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-dragons-wheel-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Dragon’s Wheel</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-wizards-9-vault-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>9-Key Wizard’s Vault</span></a></li><li><a href="/our-claws"><img src="/assets/claws/fantasy-claw-arcade-wizards-15-vault-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>15-Key Wizard’s Vault</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-traditional-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Traditional Claws</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-claw-king-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Claw King</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-multi-player-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Multi-Player Claws</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-slim-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Slim Claws</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-mini-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Mini Claws</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-digital-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Digital Claws</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-cut-2-win-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Cut-2-Win</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-cut-2-win-multi-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Cut-2-Win Multi</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-mystic-catcher-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Mystic Catcher</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-dragons-wheel-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>Dragon’s Wheel</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-wizards-9-vault-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>9-Key Wizard’s Vault</span></a></li><li aria-hidden="true"><a href="/our-claws" tabindex="-1"><img src="/assets/claws/fantasy-claw-arcade-wizards-15-vault-machine.webp" alt="" width="750" height="1000" loading="lazy"><span>15-Key Wizard’s Vault</span></a></li></ul>
   </section>
 
-  <section aria-labelledby="how-title">
-    <div class="wrap">
-      <div class="section-head"><h2 id="how-title">How it <span class="accent">works</span></h2></div>
-      <ol class="how">
-        <li><h3>Pick your machine</h3><p>Walk the rows and find the prize you want, from mini claws to our signature 10-claw machine.</p></li>
-        <li><h3>Line up your shot</h3><p>Steer the claw into position, drop it and go for the prize.</p></li>
-        <li><h3>Take home your prizes</h3><p>Every prize you grab is yours to keep: trending plush, anime and kawaii goods, toys and novelty, premium jumbo prizes and claw exclusives.</p></li>
-      </ol>
-      <p class="how-note how-hook"><span class="hook-ico" aria-hidden="true">✦</span><span>We bring in <strong class="accent">new prizes</strong> regularly, so there's always something new to go for.</span></p>
-    </div>
-  </section>
-
-  <section class="band" id="parties" aria-labelledby="parties-title">
-    <div class="wrap parties">
-      <div class="copy">
-        <p class="eyebrow">Birthdays &amp; events</p>
-        <h2 id="parties-title"><span class="accent">Celebrate</span> with us</h2>
+  <section class="xsec xparty" id="parties" aria-labelledby="parties-title">
+    <div class="wrap xparty-grid">
+      <div class="xparty-copy" data-reveal>
+        <p class="xeyebrow">Birthdays &amp; events</p>
+        <h2 id="parties-title" class="xtitle"><span class="accent">Celebrate</span> with us</h2>
         <p>Birthdays, corporate events and private parties, with claw machines, prizes and plenty of cheering. Every event includes a set number of tokens for each guest.</p>
         <p>At Fashion Show Mall and AREA15, we can also set up tables and chairs and help coordinate food and drinks.</p>
         <p>Want the whole place? Every location can be rented out for private parties.</p>
-        <div class="actions"><a class="btn" href="/birthdaysevents">Plan a party</a><a class="btn ghost" href="#finder">Find a location</a></div>
+        <div class="xh-actions"><a class="btn" href="/birthdaysevents#packages">See party packages</a><a class="btn ghost" href="#finder">Find a location</a></div>
       </div>
-      <figure class="ph has-img" ><img src="/assets/photos/fantasy-claw-arcade-girls-birthday-party.webp" alt="A girls’ birthday party group with their prizes outside Fantasy Claw Arcade" loading="lazy" style="object-position:center"></figure>
+      <div class="xparty-media" data-reveal>
+        <figure class="xp-a"><img src="/assets/photos/fantasy-claw-arcade-girls-birthday-party.webp" alt="A girls’ birthday party group with their prizes outside Fantasy Claw Arcade" width="1200" height="900" loading="lazy"></figure>
+        <figure class="xp-b"><img src="/assets/photos/fantasy-claw-arcade-fashion-show-kids-wizard-hats.webp" alt="Kids in Fantasy Claw Arcade wizard hats at Fashion Show Mall" width="1200" height="1500" loading="lazy"></figure>
+      </div>
     </div>
   </section>
 
-  <section>
+  <section class="xsec xsocial" aria-labelledby="socialTitle">
     <div class="wrap">
-      <div class="section-head"><h2>The Fantasy Claw Arcade <span class="accent">Difference</span></h2></div>
-      <div class="grid3">
-        <article class="card">
-          <a class="card-img" href="/our-claws" tabindex="-1" aria-hidden="true"><figure class="ph has-img" ><img src="/assets/photos/fantasy-claw-arcade-kid-playing-claw-machine.webp" alt="A young guest playing a claw machine at Fantasy Claw Arcade" loading="lazy" style="object-position:center 40%"></figure></a>
-          <h3>Our Claws</h3>
-          <p>From mini claws to full-size digital claw machines, our lineup is unlike any other claw arcade in the country. Visit a Fantasy Claw Arcade location near you to see our latest machines!</p>
-          <a class="more" href="/our-claws">Learn More →</a>
-        </article>
-        <article class="card">
-          <a class="card-img" href="/our-story" tabindex="-1" aria-hidden="true"><figure class="ph has-img" ><img src="/assets/photos/fantasy-claw-arcade-first-store-ribbon-cutting.webp" alt="FCA&#x27;s managing partner cutting the ribbon at the opening of the first Fantasy Claw Arcade" loading="lazy" style="object-position:60% center"></figure></a>
-          <h3>Our Story</h3>
-          <p>​Driven by a love for arcades, our founders built Fantasy Claw Arcade into the largest claw arcade in Las Vegas — and now a growing claw arcade franchise with more locations on the way. Our goal: 50+ claw arcade franchise locations nationwide by 2030.</p>
-          <a class="more" href="/our-story">Learn More →</a>
-        </article>
-        <article class="card">
-          <a class="card-img" href="/franchising" tabindex="-1" aria-hidden="true"><figure class="ph has-img" ><img src="/assets/photos/fantasy-claw-arcade-storefront-claw-machines.webp" alt="Fantasy Claw Arcade storefront at Easton Town Center, Columbus" loading="lazy" style="object-position:center"></figure></a>
-          <h3>Franchising</h3>
-          <p>Own your own claw arcade franchise! We're awarding Fantasy Claw Arcade franchise territories across the U.S. to qualified partners. Join a growing claw arcade franchise and get in on the ground floor.</p>
-          <a class="more" href="/franchising">Learn More →</a>
-        </article>
+      <div class="xhead" data-reveal>
+        <p class="xeyebrow">Guests can’t stop filming us</p>
+        <h2 id="socialTitle"><span class="accent">Millions of views</span>, made by our guests</h2>
+        <p>Guests and creators film themselves at Fantasy Claw Arcade every day. One creator video from our Fashion Show Mall arcade passed 9.6 million views on TikTok.</p>
       </div>
+      <ul class="social-list">
+        <li class="social-card">
+          <button type="button" class="social-cover" data-tiktok="7607875394984824094" aria-label="Play Serena Neel’s TikTok video at Fantasy Claw Arcade">
+            <img src="/assets/photos/fantasy-claw-arcade-serena-neel-tiktok.webp" alt="" width="393" height="702" loading="lazy">
+            <span class="play" aria-hidden="true"></span>
+            <span class="social-views" aria-hidden="true">▶ 9.6M views</span>
+          </button>
+          <p class="social-meta"><b>@serenaneel</b> · TikTok <span class="social-tag">Collab</span></p>
+        </li>
+        <li class="social-card">
+          <button type="button" class="social-cover" data-yt-wide="innry_A2mJ4" aria-label="Play Plush Time Wins’ YouTube video, The LARGEST Claw Machine Arcade in Las Vegas!">
+            <img src="https://i.ytimg.com/vi/innry_A2mJ4/maxresdefault.jpg" alt="" loading="lazy" style="object-position:20% center" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/innry_A2mJ4/hqdefault.jpg'">
+            <span class="play" aria-hidden="true"></span>
+            <span class="social-views" aria-hidden="true">▶ 1M views</span>
+          </button>
+          <p class="social-meta"><b>@PlushTimeWins</b> · YouTube</p>
+        </li>
+        <li class="social-card">
+          <button type="button" class="social-cover" data-yt-short="max2OLWFsjg" aria-label="Play JT2 Hobbies’ YouTube Short, Squishy Hunting at Fantasy Claw Fashion Mall Las Vegas">
+            <img src="https://i.ytimg.com/vi/max2OLWFsjg/hq3.jpg" alt="" loading="lazy">
+            <span class="play" aria-hidden="true"></span>
+            <span class="social-views" aria-hidden="true">▶ 536K views</span>
+          </button>
+          <p class="social-meta"><b>@JT2Hobbies</b> · YouTube</p>
+        </li>
+        <li class="social-card">
+          <button type="button" class="social-cover" data-yt-short="uaoRg5_qP1g" aria-label="Play Claw Craziness’s YouTube Short, I Went To The HUGE Fantasy Claw Arcade!">
+            <img src="https://i.ytimg.com/vi/uaoRg5_qP1g/hqdefault.jpg" alt="" loading="lazy">
+            <span class="play" aria-hidden="true"></span>
+            <span class="social-views" aria-hidden="true">▶ 420K views</span>
+          </button>
+          <p class="social-meta"><b>@clawcraziness</b> · YouTube</p>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <section>
-    <div class="wrap about">
-      <figure class="ph has-img" ><img src="/assets/photos/fantasy-claw-arcade-guest-claw-machine-aisle.webp" alt="A guest walking the claw machine aisle at Fantasy Claw Arcade" loading="lazy" style="object-position:center 40%"></figure>
-      <div class="copy">
-        <h2 class="display" style="font-size:clamp(1.7rem,4vw,2.6rem)">Where the <span class="accent">prize</span> is right in front of you</h2>
+  <section class="xsec xfr" aria-labelledby="fr-title">
+    <div class="xfr-bg" aria-hidden="true"><img src="/assets/photos/fantasy-claw-arcade-storefront-claw-machines.webp" alt="" width="1200" height="801" loading="lazy"></div>
+    <div class="wrap">
+      <div class="xfr-copy" data-reveal>
+        <p class="xeyebrow">Now franchising</p>
+        <h2 id="fr-title" class="xtitle">Bring the arcade to <span class="accent">your city</span></h2>
+        <p>We’re awarding franchise territories across the U.S. to qualified partners, with support from site selection through opening day and beyond.</p>
+      </div>
+      <dl class="xstats" data-reveal>
+        <div><dt>Starting investment, including the franchise fee</dt><dd data-count="292" data-prefix="$" data-suffix="K">$292K</dd></div>
+        <div><dt>Minimum liquid capital to qualify</dt><dd data-count="100" data-prefix="$" data-suffix="K">$100K</dd></div>
+        <div><dt>Hours of hands-on owner training</dt><dd data-count="100" data-suffix="+">100+</dd></div>
+        <div><dt>Hours of staff training</dt><dd data-count="48">48</dd></div>
+      </dl>
+      <p class="xfine">Investment figures from the 2026 Franchise Disclosure Document, Item 7. Financial performance information is in Item 19.</p>
+      <div class="xh-actions" data-reveal><a class="btn" href="/franchising#anchor1">Franchise Info</a><a class="btn ghost" href="/franchising#investment">See the investment</a></div>
+    </div>
+  </section>
+
+  <section class="xsec xabout">
+    <div class="wrap xabout-grid">
+      <figure data-reveal><img src="/assets/photos/fantasy-claw-arcade-guest-claw-machine-aisle.webp" alt="A guest walking the claw machine aisle at Fantasy Claw Arcade" width="1070" height="1470" loading="lazy"></figure>
+      <div class="copy" data-reveal>
+        <h2 class="xtitle">Where the <span class="accent">prize</span> is right in front of you</h2>
         <p>Experience our unique blend of entertainment and gaming at Fantasy Claw Arcade, a growing claw arcade franchise in the United States. What started as the largest claw arcade in Las Vegas, NV, has grown into a nationally expanding claw arcade franchise with locations across the country. We combine the thrill of gaming with the joy of winning prizes, offering a unique skill-based claw crane experience inspired by Japanese culture. Unlike traditional arcades, every game we feature puts the prize right in front of you.</p>
         <p>Our prize selection is geared towards audiences of all ages, because it's not just kids that love playing claw arcades! From plush of all sizes to nostalgic collectibles to cutting-edge gadgets, there's something for everyone. With a wide range of claw and prize redemption machines, we promise an unforgettable experience.</p>
-        <p>Interested in bringing a Fantasy Claw Arcade to your city? We're actively awarding claw arcade franchise territories across the U.S. <a href="/franchising" style="color:var(--pink-ink)">Learn more about franchising opportunities</a></p>
+        <p>Interested in bringing a Fantasy Claw Arcade to your city? We're actively awarding claw arcade franchise territories across the U.S. <a href="/franchising">Learn more about franchising opportunities</a></p>
       </div>
     </div>
   </section>
@@ -209,6 +306,13 @@
   <div class="wrap footer-legal"><p>&copy; 2026 Fantasy Claw Arcade · <a href="/privacy-policy">Privacy Policy</a> · <a href="/terms-and-conditions">Terms &amp; Conditions</a></p></div>
 </footer>
 
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+  <div class="video-modal-box">
+    <button type="button" class="drawer-close video-modal-close" aria-label="Close the video">×</button>
+    <div class="video-modal-frame"></div>
+  </div>
+</div>
 <script src="/assets/site.js" defer></script>
+<script src="/assets/motion.js" defer></script>
 </body>
 </html>
