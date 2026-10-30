@@ -383,3 +383,9 @@
 .xreel-btn { width: 48px; height: 48px; border-radius: 50%; border: 2px solid rgba(255,255,255,.6); background: rgba(255,255,255,.06); color: #fff; font: 700 1.6rem/1 var(--body); cursor: pointer; transition: background .2s, border-color .2s; }
 .xreel-btn:hover { background: var(--pink); border-color: var(--pink); }
 @media (max-width: 900px) { .xreel-row { grid-auto-columns: 72% !important; } .xreel-nav { display: none; } }
+/* Guest video wall: five across, edge to edge, no overflow (Oct 30) */
+.xreel-row { grid-auto-flow: row !important; grid-template-columns: repeat(5, minmax(0, 1fr)) !important; grid-auto-columns: auto !important; overflow: visible; gap: clamp(12px, 1.4vw, 22px); max-width: 1680px; margin: 0 auto; padding: 30px clamp(16px, 3vw, 48px) 30px; }
+.xreel { border-radius: 28px; }
+.xreel::before { top: 10px; height: 16px; }
+.xreel-cap { left: 10px; right: 10px; bottom: 10px; padding: 8px 12px; font-size: .8rem; }
+@media (max-width: 900px) { .xreel-row { grid-template-columns: none !important; grid-auto-flow: column !important; grid-auto-columns: 72% !important; overflow-x: auto; } }
