@@ -332,3 +332,11 @@
 .xh::before { background: linear-gradient(90deg, rgba(14,7,17,.9) 0%, rgba(14,7,17,.72) 38%, rgba(14,7,17,.22) 64%, rgba(14,7,17,0) 88%), linear-gradient(0deg, rgba(14,7,17,1) 0%, rgba(14,7,17,0) 22%) !important; }
 .xh-glow { display: none; }
 .xh-big, .xh-kicker, .xh-sub { text-shadow: 0 2px 24px rgba(0,0,0,.55); }
+/* tighter section spacing (Elliot, Oct 30) */
+.xsec { padding-block: clamp(44px, 5.5vw, 80px); }
+.xsec + .xsec { padding-top: clamp(28px, 3.5vw, 52px); }
+.xhead { margin-bottom: 28px; }
+.xsteps { margin-top: 28px; }
+.xhow-stage { padding-top: 0; }
+.xmachines { margin-top: 12px !important; }
+.xsocial .social-list { padding-bottom: 8px; }
