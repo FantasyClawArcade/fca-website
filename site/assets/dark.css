@@ -301,3 +301,23 @@
   .ticker { transform: rotate(-1.2deg) scale(1.04); }
 }
 .xking .xhead a { color: var(--pink-ink); font-weight: 700; } .xking .xmachines { margin-top: 8px; }
+
+/* Store cards grouped by market (Oct 30) */
+.xcities { display: grid; gap: clamp(36px, 5vw, 56px); }
+.xcity { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 20px 40px; align-items: start; padding-top: clamp(28px, 4vw, 40px); border-top: 1px solid rgba(255,255,255,.1); }
+.xcity-name { margin: 0; font: 900 clamp(2rem, 3.6vw, 3rem)/.95 var(--headline); letter-spacing: -.03em; position: sticky; top: 110px; }
+.xcity-name span { display: block; margin-top: 10px; font: 800 .8rem/1 var(--body); letter-spacing: .18em; color: var(--pink-ink); }
+.xcity-stores { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.xcity-stores .xs-store { scroll-snap-align: start; }
+.xs-store h4 { margin: 2px 0 0; font: 800 1.35rem/1.15 var(--headline); letter-spacing: -.01em; }
+.xs-more h4 { font-size: 2rem; line-height: 1.02; }
+@media (max-width: 1000px) { .xcity { grid-template-columns: 1fr; } .xcity-name { position: static; } .xcity-name span { display: inline; margin: 0 0 0 10px; } }
+@media (max-width: 760px) {
+  .xcity-stores { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 82%; overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: -16px; padding: 4px 16px 16px; scrollbar-width: none; }
+  .xcity-stores::-webkit-scrollbar { display: none; }
+  .xcity-stores.n1 { grid-auto-columns: 100%; }
+}
+.xcity { grid-template-columns: 250px minmax(0, 1fr); }
+.xcity-name { font-size: clamp(2rem, 3vw, 2.6rem); white-space: nowrap; }
+.xs-more .btn { white-space: nowrap; }
+@media (max-width: 1000px) { .xcity { grid-template-columns: 1fr; } }
