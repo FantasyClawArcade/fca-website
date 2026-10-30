@@ -58,3 +58,19 @@
     counters.forEach(function (c) { co.observe(c); });
   }
 })();
+
+/* Guest video wall: play clips only while on screen; stills for reduced motion */
+(function () {
+  var vids = [].slice.call(document.querySelectorAll(".xreel video"));
+  if (!vids.length) return;
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!("IntersectionObserver" in window)) { vids.forEach(function (v) { v.preload = "auto"; v.play().catch(function () {}); }); return; }
+  var vo = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      var v = e.target;
+      if (e.isIntersecting) { if (v.preload === "none") v.preload = "auto"; var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+      else v.pause();
+    });
+  }, { threshold: 0.35 });
+  vids.forEach(function (v) { v.muted = true; vo.observe(v); });
+})();
