@@ -325,3 +325,6 @@
 .xcity { grid-template-columns: 1fr !important; gap: 20px; }
 .xcity-name { position: static; }
 .xcity-name span { display: inline; margin: 0 0 0 12px; vertical-align: middle; }
+/* city heading: one style, pink dot (Oct 30) */
+.xcity-name { display: flex; align-items: center; gap: 14px; }
+.xcity-name::before { content: ""; flex: none; width: 14px; height: 14px; border-radius: 50%; background: var(--pink); box-shadow: 0 0 14px rgba(222,11,131,.8); }
