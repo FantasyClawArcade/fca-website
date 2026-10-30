@@ -345,3 +345,4 @@
 .xabout-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .xabout figure img { aspect-ratio: 4 / 3; object-position: center 45%; }
 .xabout figure img, .xking-media img, .xp-a img, .xp-b img { height: auto; } .xparty-media figure img { height: 100%; }
+.xstats div { display: flex; flex-direction: column; justify-content: flex-start; } .xstats dd { order: -1; }
