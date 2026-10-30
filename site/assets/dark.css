@@ -328,3 +328,7 @@
 /* city heading: one style, pink dot (Oct 30) */
 .xcity-name { display: flex; align-items: center; gap: 14px; }
 .xcity-name::before { content: ""; flex: none; width: 14px; height: 14px; border-radius: 50%; background: var(--pink); box-shadow: 0 0 14px rgba(222,11,131,.8); }
+/* hero: let the photo's own neon show (Elliot, Oct 30) */
+.xh::before { background: linear-gradient(90deg, rgba(14,7,17,.9) 0%, rgba(14,7,17,.72) 38%, rgba(14,7,17,.22) 64%, rgba(14,7,17,0) 88%), linear-gradient(0deg, rgba(14,7,17,1) 0%, rgba(14,7,17,0) 22%) !important; }
+.xh-glow { display: none; }
+.xh-big, .xh-kicker, .xh-sub { text-shadow: 0 2px 24px rgba(0,0,0,.55); }
