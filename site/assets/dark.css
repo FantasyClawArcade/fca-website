@@ -363,3 +363,13 @@
   .xreel { scroll-snap-align: center; }
 }
 @media (prefers-reduced-motion: reduce) { .xreel { transform: none !important; } }
+/* Guest video wall: rebalanced proportions (Oct 30) */
+.xreels .xhead { grid-template-columns: 1fr; gap: 14px; margin-bottom: 8px; }
+.xreels .xhead h2 { font-size: clamp(2.2rem, 4.6vw, 3.8rem) !important; }
+.xreels .xhead p { max-width: 62ch; }
+.xreel-row { max-width: 1360px; gap: 18px; padding-top: 28px; }
+.xreel { border-radius: 24px; border-width: 2px; }
+.xreel::before { top: 8px; height: 12px; width: 26%; margin-left: -13%; }
+.xreel:nth-child(odd) { transform: translateY(10px) rotate(-1deg); }
+.xreel:nth-child(even) { transform: translateY(-4px) rotate(1deg); }
+.xreel-cap { left: 8px; right: 8px; bottom: 8px; padding: 7px 10px; border-radius: 10px; font-size: .74rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
