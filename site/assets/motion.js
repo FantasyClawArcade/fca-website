@@ -74,3 +74,14 @@
   }, { threshold: 0.35 });
   vids.forEach(function (v) { v.muted = true; vo.observe(v); });
 })();
+
+/* Guest video wall: previous / next buttons */
+(function () {
+  var row = document.querySelector(".xreel-row"); if (!row) return;
+  [].slice.call(document.querySelectorAll("[data-reel]")).forEach(function (b) {
+    b.addEventListener("click", function () {
+      var card = row.querySelector(".xreel"); var step = card ? card.getBoundingClientRect().width + 24 : 300;
+      row.scrollBy({ left: step * +b.getAttribute("data-reel"), behavior: "smooth" });
+    });
+  });
+})();
