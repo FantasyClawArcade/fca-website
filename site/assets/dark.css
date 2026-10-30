@@ -300,3 +300,4 @@
   .xparty-media { min-height: 360px; }
   .ticker { transform: rotate(-1.2deg) scale(1.04); }
 }
+.xking .xhead a { color: var(--pink-ink); font-weight: 700; } .xking .xmachines { margin-top: 8px; }
