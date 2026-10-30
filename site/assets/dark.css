@@ -346,3 +346,4 @@
 .xabout figure img { aspect-ratio: 4 / 3; object-position: center 45%; }
 .xabout figure img, .xking-media img, .xp-a img, .xp-b img { height: auto; } .xparty-media figure img { height: 100%; }
 .xstats div { display: flex; flex-direction: column; justify-content: flex-start; } .xstats dd { order: -1; }
+.xstats dd { font-weight: 800; letter-spacing: -.02em; }
