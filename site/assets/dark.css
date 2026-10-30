@@ -321,3 +321,7 @@
 .xcity-name { font-size: clamp(2rem, 3vw, 2.6rem); white-space: nowrap; }
 .xs-more .btn { white-space: nowrap; }
 @media (max-width: 1000px) { .xcity { grid-template-columns: 1fr; } }
+/* city name above its cards on every screen size (Elliot, Oct 30) */
+.xcity { grid-template-columns: 1fr !important; gap: 20px; }
+.xcity-name { position: static; }
+.xcity-name span { display: inline; margin: 0 0 0 12px; vertical-align: middle; }
