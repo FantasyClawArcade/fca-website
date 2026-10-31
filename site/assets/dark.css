@@ -390,3 +390,6 @@
 .xreel-cap { left: 10px; right: 10px; bottom: 10px; padding: 8px 12px; font-size: .8rem; }
 @media (max-width: 900px) { .xreel-row { grid-template-columns: none !important; grid-auto-flow: column !important; grid-auto-columns: 72% !important; overflow-x: auto; } }
 .xreels .xhead h2 { font-size: clamp(2.6rem, 7vw, 5.6rem) !important; }
+/* Guest video wall: 15% smaller frames for sharper playback (Oct 30) */
+.xreel-row { max-width: 1680px; padding-inline: calc(min(3vw, 48px) + 0.075 * (min(100vw, 1680px) - 2 * min(3vw, 48px))); }
+@media (max-width: 900px) { .xreel-row { padding-inline: 16px; } }
