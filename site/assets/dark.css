@@ -393,3 +393,13 @@
 /* Guest video wall: 15% smaller frames for sharper playback (Oct 30) */
 .xreel-row { max-width: 1680px; padding-inline: calc(min(3vw, 48px) + 0.075 * (min(100vw, 1680px) - 2 * min(3vw, 48px))); }
 @media (max-width: 900px) { .xreel-row { padding-inline: 16px; } }
+/* Franchise band: As featured in row (Oct 30) */
+.xpress { margin-top: 34px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,.14); display: grid; gap: 16px; }
+.xpress-label { margin: 0; font: 800 .74rem/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--yellow); }
+.xpress-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 34px; }
+.xpress-list a { display: block; opacity: .78; transition: opacity .2s; }
+.xpress-list a:hover { opacity: 1; }
+.xpress-list img { display: block; height: 26px !important; width: auto !important; max-width: 190px; object-fit: contain; filter: brightness(0) invert(1); }
+@media (max-width: 760px) { .xpress-list { gap: 14px 22px; } .xpress-list img { height: 20px !important; max-width: 140px; } }
+@media (min-width: 1100px) { .xpress-list { flex-wrap: nowrap; justify-content: space-between; gap: 22px; } .xpress-list img { height: 22px !important; max-width: 170px; } }
+.xpress + .xfine { margin-top: 22px; }
