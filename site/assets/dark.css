@@ -506,3 +506,8 @@
 :root.theme-dark[data-dir] .city h2.city-name, :root.theme-dark[data-dir] .xcity-name { font-size: clamp(1.6rem, 2.4vw, 2.1rem) !important; font-weight: 800; letter-spacing: -0.015em; line-height: 1.05; }
 .xcity-name::before, :root.theme-dark[data-dir] .city h2.city-name::before { width: 12px; height: 12px; }
 .xs-acts .call { flex: 0 0 auto; padding-inline: 14px; }
+/* Gift Cards page: card graphic, level (the logo is never angled) */
+.gc-stack { position: relative; margin: 0; padding: 4% 7% 0 0; align-self: center; }
+.gc-stack img { display: block; width: 100%; height: auto; border-radius: 4.5% / 7.9%; }
+.gc-back { position: absolute; right: 0; top: 0; width: 93% !important; filter: brightness(.5); }
+.gc-front { position: relative; box-shadow: 0 34px 70px rgba(0,0,0,.6); }
