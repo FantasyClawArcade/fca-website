@@ -1,11 +1,29 @@
 # Netlify settings for the Fantasy Claw Arcade website.
-# The site is plain HTML: no build step. Netlify publishes the "site" folder.
+# The site is plain HTML. Netlify publishes the "site" folder after building the search index.
 [build]
   publish = "site"
-  command = ""
+  # Builds the site search index (Pagefind) from the finished pages
+  command = "npx -y pagefind@1.5.2 --site site"
 
 [[headers]]
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache images and video for a week (files are replaced, not renamed, when they change)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# CSS and JS change often: browsers check for a newer copy on every visit
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
