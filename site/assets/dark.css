@@ -511,3 +511,4 @@
 .gc-stack img { display: block; width: 100%; height: auto; border-radius: 4.5% / 7.9%; }
 .gc-back { position: absolute; right: 0; top: 0; width: 93% !important; filter: brightness(.5); }
 .gc-front { position: relative; box-shadow: 0 34px 70px rgba(0,0,0,.6); }
+.gc-stack { padding: 0; }
