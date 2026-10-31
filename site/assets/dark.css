@@ -419,3 +419,85 @@
 .xreel:hover { box-shadow: 0 0 0 1px rgba(255,255,255,.14), 0 30px 70px rgba(0,0,0,.6); }
 .xking-media { box-shadow: none; }
 .theme-dark .cta-band .wrap { box-shadow: none !important; }
+
+/* ======================================================================
+   Site-wide dark styling for shared components (all pages, Oct 30)
+   ====================================================================== */
+.theme-dark .page-hero, .theme-dark .loc-hub-hero, .theme-dark .hero { background: radial-gradient(60% 80% at 85% 0%, rgba(122,59,144,.35), transparent 70%), var(--bg); border-bottom: 1px solid rgba(255,255,255,.06); }
+.theme-dark .band { background: var(--surface); border-color: rgba(255,255,255,.06); }
+.theme-dark .eyebrow { color: var(--yellow); }
+.theme-dark h1, .theme-dark h2, .theme-dark h3 { color: #fff; }
+.theme-dark .lede, .theme-dark .muted { color: var(--muted); }
+.theme-dark a.more, .theme-dark .more-link { color: var(--pink-ink); }
+
+/* cards: dark surfaces, thin border, soft dark shadow (replaces the sticker look) */
+.theme-dark .why-card, .theme-dark .store, .theme-dark .tile, .theme-dark .how li, .theme-dark .included > div, .theme-dark .jobs li,
+.theme-dark .others a, .theme-dark .card, .theme-dark .qr-card, .theme-dark .support .support-card, .theme-dark .partner-card,
+.theme-dark .map-card, .theme-dark .map-cta, .theme-dark .pkg, .theme-dark .fr-step, .theme-dark .post-card, .theme-dark .machine-photo {
+  background: linear-gradient(180deg, var(--surface-2), var(--surface)) !important; color: var(--ink);
+  border: 1px solid rgba(255,255,255,.1) !important; box-shadow: 0 18px 40px rgba(0,0,0,.35) !important; border-radius: 20px !important; }
+.theme-dark .machine-photo { padding: 0; overflow: hidden; }
+.theme-dark .why-card p, .theme-dark .support-card p, .theme-dark .card p, .theme-dark .tile p, .theme-dark .partner-card p, .theme-dark .pkg li, .theme-dark .machine p { color: var(--muted); }
+.theme-dark .machine .machine-spec { color: var(--yellow); }
+.theme-dark a.store:hover, .theme-dark .others a:hover, .theme-dark a.card:hover { transform: translateY(-4px); box-shadow: 0 22px 50px rgba(0,0,0,.5) !important; border-color: rgba(222,11,131,.6) !important; }
+.theme-dark .support .ico { background: rgba(222,11,131,.15) !important; color: var(--pink-ink) !important; }
+
+/* light bands become dark */
+.theme-dark .featured-in { background: var(--surface); border-color: rgba(255,255,255,.08); }
+.theme-dark .featured-in img { filter: brightness(0) invert(1); opacity: .8; }
+.theme-dark .featured-in a:hover img { opacity: 1; }
+.theme-dark .featured-in .fi-label { color: var(--yellow); }
+.theme-dark .social-band, .theme-dark .form-band { background: radial-gradient(60% 80% at 20% 0%, rgba(122,59,144,.3), transparent 70%), var(--surface); border-color: rgba(255,255,255,.08); }
+.theme-dark .social-band .lede, .theme-dark .form-band p { color: var(--muted); }
+.theme-dark .social-meta { color: var(--muted); } .theme-dark .social-meta b { color: #fff; }
+.theme-dark .social-cover { border: 1px solid rgba(255,255,255,.14) !important; box-shadow: 0 24px 60px rgba(0,0,0,.5) !important; border-radius: 22px !important; }
+.theme-dark .how-hook { background: rgba(253,209,0,.08); border: 1px solid rgba(253,209,0,.35); box-shadow: none; color: #fff; }
+.theme-dark .hook-ico { background: rgba(253,209,0,.15); color: var(--yellow); }
+.theme-dark .pkg-feat { border-color: var(--pink) !important; }
+.theme-dark .pkg-custom { background: linear-gradient(160deg, #3a1446, #1b0d22) !important; }
+.theme-dark .pkg-price span { color: #fff; } .theme-dark .pkg-feat .pkg-price span { color: var(--pink-ink); }
+.theme-dark .pkg ul { border-top-color: rgba(255,255,255,.12); }
+.theme-dark .pkg-save { color: var(--pink-ink); }
+.theme-dark .map-cta { background: radial-gradient(80% 60% at 30% 20%, rgba(222,11,131,.35), transparent 70%), linear-gradient(160deg, #3a1446, #1b0d22) !important; }
+.theme-dark .pin-label { background: var(--surface-2); color: #fff; border-color: rgba(255,255,255,.2); box-shadow: none; }
+
+/* forms stay on a white card so the HubSpot forms read clearly */
+.theme-dark .formcard, .theme-dark #eventsForm, .theme-dark .form-band .formcard { background: #fff !important; color: #332C2B; border: 0 !important; box-shadow: 0 24px 60px rgba(0,0,0,.45) !important; border-radius: 22px !important; }
+.theme-dark .formcard h2, .theme-dark .formcard h3, .theme-dark .formcard p, .theme-dark .formcard label { color: #332C2B; }
+.theme-dark .fr-drawer { background: #fff; color: #332C2B; }
+.theme-dark .fr-drawer h2, .theme-dark .fr-drawer p { color: #332C2B; }
+.theme-dark .drawer-close { background: #fff; color: #332C2B; }
+.theme-dark .search-box { color: #332C2B; } .theme-dark .search-box h2 { color: #332C2B; }
+
+/* FAQ */
+.theme-dark .faq { border-top-color: rgba(255,255,255,.12); }
+.theme-dark .faq details { border-bottom-color: rgba(255,255,255,.12); }
+.theme-dark .faq summary { color: #fff; }
+.theme-dark .faq summary::after { background: rgba(255,255,255,.08); color: var(--pink-ink); }
+.theme-dark .faq details > div { color: var(--muted); }
+.theme-dark .faq-jump a { color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.25); }
+.theme-dark .faq-jump a:hover { box-shadow: inset 0 0 0 1.5px var(--pink); color: var(--pink-ink); }
+
+/* articles */
+.theme-dark .prose, .theme-dark .article p, .theme-dark .article li { color: #e3d6ea; }
+.theme-dark .byline, .theme-dark .post-meta { color: var(--muted); }
+.theme-dark .post-hero { background: var(--surface); border-radius: 20px; overflow: hidden; }
+.theme-dark .post-hero.fit-contain img { background: var(--surface); }
+.theme-dark blockquote { border-left-color: var(--pink); color: #fff; }
+.theme-dark .related { border-top-color: rgba(255,255,255,.12); }
+.theme-dark .disclaimer, .theme-dark .disclaimer p { color: var(--muted); }
+
+/* misc */
+.theme-dark .side-tab { box-shadow: none; }
+.theme-dark .quick { background: rgba(14,7,17,.92); border-top-color: rgba(255,255,255,.1); }
+.theme-dark .steps li::before, .theme-dark .journey .steps li::before { color: var(--pink-ink); }
+.theme-dark hr { border-color: rgba(255,255,255,.12); }
+.theme-dark table { color: var(--ink); } .theme-dark th, .theme-dark td { border-color: rgba(255,255,255,.12); }
+/* photos: drop the pink offset "sticker" shadow */
+.theme-dark .ph, .theme-dark figure.ph, .theme-dark .event-photo, .theme-dark .post-hero, .theme-dark .fr-hero-media .video-card, .theme-dark .video-card { box-shadow: 0 24px 60px rgba(0,0,0,.45) !important; border: 1px solid rgba(255,255,255,.12) !important; border-radius: 20px !important; }
+/* map: dark states, light borders */
+.theme-dark .map-card img, .theme-dark .us-map img, .theme-dark img[src*="us-map"] { filter: invert(.9) hue-rotate(180deg) saturate(.6) brightness(.9); }
+/* placeholder form fields on the white card */
+.theme-dark .formcard input, .theme-dark .formcard select, .theme-dark .formcard textarea { background: #fff !important; color: #332C2B !important; border: 1.5px solid #d9cfdc !important; }
+/* section labels: yellow like the home page */
+:root.theme-dark[data-dir] .eyebrow { color: var(--yellow); }
